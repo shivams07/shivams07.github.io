@@ -28,6 +28,6 @@ defined (`get_variable_defs` returns `{}`), and no node is hidden.
 | 20 | Footer wordmark `49:78` | DM Sans 500 300px, tracking 6px | `min(284px, (100vw − 2·padding) / 6.5)`, tracking 0.02em | "Shivam Singh" in the self-hosted static DM Sans 500 renders wider than Figma's text; this sizes it to span the box without clipping at every width |
 | 21 | Project covers for Nomi / figma-to-code | Photo/screenshot covers | Designed SVG covers (`NomiCover`, `FigmaToCodeCover`) | No screenshots exist for an iOS app and an agent skill; values are designed, not measured |
 | 22 | AI engineering skill card | Plain `#1e1e1e` card | Inset 1.5px neon ring + `0 0 40px rgba(205,244,90,.18)` glow | Marks the specialism (spec §2); designed, not measured |
-| 23 | Hero glow | n/a | Solid-core radial gradients, 70px blur (50px + larger blobs on phones) | Tuned in visual QA so the glow reads as neon on white at 1920px and 375px |
+| 23 | Hero glow | n/a | Solid-core radial gradients, 70px blur (50px + larger blobs on phones), drifting on 4, 5 and 6s cycles with wide sweeps | Tuned so the glow reads as neon on white and its motion is clearly visible (owner asked for livelier movement); static under reduced motion |
 | 24 | Contact labels `52:22` (light pages) | `#7e7e7e` | `#616161` (`--color-muted`); dark tone keeps `#7e7e7e` | #7e7e7e is 4.06:1 on white, below WCAG AA 4.5:1 |
 | 25 | Hero social column | n/a (designed) | Hidden below 1600px; GitHub/LinkedIn/Email remain in the dock | Below ~1600px the 44px circles touch the headline |
