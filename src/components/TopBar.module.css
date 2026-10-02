@@ -1,0 +1,34 @@
+.bar {
+  position: absolute;
+  top: clamp(20px, 2.448vw, 47px);
+  left: var(--gutter-bar);
+  right: var(--gutter-bar);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  font: var(--fs-ui) / normal var(--font-ui);
+  color: #000;
+}
+
+.bar[data-tone='dark'] {
+  color: #fff;
+}
+
+.name {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.statement {
+  max-width: 600px;
+  font-weight: 300;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .statement {
+    display: none;
+  }
+}

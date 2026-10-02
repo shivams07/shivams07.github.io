@@ -1,0 +1,17 @@
+{
+  "home": {
+    "path": "/",
+    "title": "Shivam Singh — Full Stack Developer (AI)",
+    "description": "Shivam Singh is a Full Stack Developer in Mumbai specialising in AI — building products end to end."
+  },
+  "skills": {
+    "path": "/skills",
+    "title": "Skills — Shivam Singh",
+    "description": "AI engineering, backend, frontend, mobile and the practices behind them."
+  },
+  "projects": {
+    "path": "/projects",
+    "title": "Projects — Shivam Singh",
+    "description": "Estate Ease, Nomi, the Crafx Studio website and figma-to-code."
+  }
+}

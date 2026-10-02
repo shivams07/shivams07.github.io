@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: 586fr 442fr 586fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1279px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column[data-column='3'] {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid,
+  .column[data-column='3'] {
+    grid-template-columns: 1fr;
+  }
+}

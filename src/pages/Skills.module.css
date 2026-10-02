@@ -1,0 +1,8 @@
+.page {
+  background: #000;
+  color: #fff;
+}
+
+.grid {
+  padding-block: clamp(24px, 3.65vw, 70px) var(--space-66);
+}

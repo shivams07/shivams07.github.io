@@ -1,0 +1,60 @@
+.dock {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 20px;
+  border-radius: 18px;
+  background: var(--color-dock);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  transform: translateX(-50%);
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 31px;
+  background: var(--color-dock-item);
+  color: #fff;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.item:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.active,
+.active:hover {
+  background: var(--color-neon);
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .dock {
+    bottom: 12px;
+    gap: 6px;
+    padding: 8px 12px;
+  }
+
+  .item {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item,
+  .item:hover {
+    transition: none;
+    transform: none;
+  }
+}

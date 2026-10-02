@@ -1,0 +1,38 @@
+.works {
+  padding-block: var(--space-100);
+}
+
+.worksHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: var(--space-66);
+}
+
+.worksHeading {
+  font: 500 var(--fs-section-heading) / normal var(--font-ui);
+  white-space: nowrap;
+}
+
+.worksCaption {
+  max-width: 428px;
+  font: 300 var(--fs-body-l) / normal var(--font-display);
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-66);
+}
+
+@media (max-width: 767px) {
+  .worksHeader {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .worksHeading {
+    white-space: normal;
+  }
+}

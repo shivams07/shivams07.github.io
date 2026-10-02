@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-block: clamp(96px, 7.3vw, 140px) clamp(24px, 2.6vw, 50px);
+}
+
+.header[data-variant='skills'] {
+  min-height: clamp(380px, 47.8vw, 918px);
+  color: #fff;
+  text-align: center;
+}
+
+.header[data-variant='projects'] {
+  min-height: clamp(320px, 42.86vw, 823px);
+}
+
+.inner {
+  width: 100%;
+}
+
+.header[data-variant='skills'] .title {
+  max-width: 1212px;
+  margin-inline: auto;
+  font: 400 var(--fs-skills-heading) / normal var(--font-display);
+}
+
+.header[data-variant='projects'] .title {
+  max-width: 1078px;
+  font: 500 var(--fs-projects-heading) / normal var(--font-ui);
+}

@@ -1,0 +1,47 @@
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --color-surface-dark: #1e1e1e;
+  --color-tile-dark: #141414;
+  --color-dock: #171717;
+  --color-dock-item: #262626;
+  --color-muted: #616161;
+  --color-muted-2: #7e7e7e;
+  --color-muted-dark: #aaaaaa;
+  --color-outline: #aeaeae;
+  --color-neon: #cdf45a;
+  --color-neon-2: #9bea3a;
+  --color-neon-3: #e8ff8a;
+
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --fs-wordmark: min(284px, calc((100vw - 2 * clamp(12px, 1.875vw, 36px)) / 6.5));
+  --tracking-wordmark: 0.02em;
+  --fs-skills-heading: clamp(52px, 7.29vw, 140px);
+  --fs-hero: clamp(44px, 6.25vw, 120px);
+  --fs-section-heading: clamp(44px, 5.208vw, 100px);
+  --fs-footer-tagline: clamp(28px, 5.208vw, 100px);
+  --fs-projects-heading: clamp(34px, 4.167vw, 80px);
+  --fs-contact: clamp(36px, 4.01vw, 77px);
+  --fs-lead: clamp(24px, 2.083vw, 40px);
+  --fs-card-title: clamp(24px, 2.083vw, 40px);
+  --fs-link: clamp(20px, 1.5625vw, 30px);
+  --fs-skill-title: clamp(22px, 1.458vw, 28px);
+  --fs-body-l: clamp(17px, 1.146vw, 22px);
+  --fs-body: clamp(18px, 1.25vw, 24px);
+  --fs-ui: clamp(16px, 1.042vw, 20px);
+  --fs-label: 16px;
+
+  --gutter: clamp(16px, 6.927vw, 133px);
+  --gutter-bar: clamp(16px, 3.177vw, 61px);
+  --content-max: 1654px;
+  --space-100: clamp(56px, 5.208vw, 100px);
+  --space-66: clamp(36px, 3.4375vw, 66px);
+  --space-113: clamp(48px, 5.885vw, 113px);
+  --radius-card: clamp(20px, 2.1875vw, 42px);
+  --radius-skill: clamp(20px, 1.667vw, 32px);
+  --radius-pill: 37px;
+  --dock-clearance: 112px;
+}

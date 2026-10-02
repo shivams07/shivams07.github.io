@@ -1,0 +1,116 @@
+.contact {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  padding-block: var(--space-66);
+}
+
+.contact[data-tone='dark'] {
+  background: #000;
+  color: #fff;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-113);
+}
+
+.kicker {
+  font: 400 var(--fs-ui) / normal var(--font-mono);
+}
+
+.heading {
+  margin-top: 2px;
+  font: 400 var(--fs-contact) / 1.21 var(--font-ui);
+}
+
+.line {
+  display: block;
+}
+
+.dividerRow {
+  position: relative;
+}
+
+.divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid currentColor;
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  right: clamp(0px, 9.427vw, 181px);
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: clamp(120px, 14.48vw, 278px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-neon);
+  color: #000;
+  font: 400 var(--fs-body) / 1 var(--font-ui);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cta:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 0 60px rgba(205, 244, 90, 0.55);
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 57px;
+}
+
+.field {
+  width: min(414px, 100%);
+}
+
+.field dt {
+  font: 400 var(--fs-label) / normal var(--font-ui);
+  color: var(--color-muted);
+}
+
+.contact[data-tone='dark'] .field dt {
+  color: var(--color-muted-2);
+}
+
+.field dd {
+  margin-top: 5px;
+  font: 400 var(--fs-body) / normal var(--font-ui);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .dividerRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+  }
+
+  .divider {
+    align-self: stretch;
+  }
+
+  .cta {
+    position: static;
+    transform: none;
+  }
+
+  .cta:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .cta:hover {
+    transition: none;
+  }
+}
