@@ -1,5 +1,9 @@
 export type BrandKey =
-  | 'claude'
+  | 'langgraph'
+  | 'langchain'
+  | 'modelcontextprotocol'
+  | 'crewai'
+  | 'python'
   | 'openjdk'
   | 'springboot'
   | 'nodedotjs'

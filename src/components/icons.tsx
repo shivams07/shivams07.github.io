@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import {
-  siClaude,
+  siCrewai,
   siDocker,
   siExpress,
   siGit,
@@ -8,11 +8,15 @@ import {
   siGrafana,
   siIntellijidea,
   siKibana,
+  siLangchain,
+  siLanggraph,
+  siModelcontextprotocol,
   siMongodb,
   siNextdotjs,
   siNodedotjs,
   siOpenjdk,
   siPostgresql,
+  siPython,
   siReact,
   siRedis,
   siSplunk,
@@ -117,7 +121,11 @@ export function UiIcon({ name, size = 24 }: { name: UiIconName; size?: number })
 }
 
 const BRANDS: Record<BrandKey, SimpleIcon> = {
-  claude: siClaude,
+  langgraph: siLanggraph,
+  langchain: siLangchain,
+  modelcontextprotocol: siModelcontextprotocol,
+  crewai: siCrewai,
+  python: siPython,
   openjdk: siOpenjdk,
   springboot: siSpringboot,
   nodedotjs: siNodedotjs,

@@ -3,27 +3,27 @@ import type { Profile } from './types'
 export const profile: Profile = {
   name: 'Shivam Singh',
   role: 'Full Stack Developer',
-  topBarStatement: 'Full Stack Developer specialising in AI — building products end to end.',
+  topBarStatement: 'Full Stack Developer specialising in AI, building products end to end.',
   hero: {
     headline: [
       [{ text: 'Building ' }, { text: 'Intelligent', highlight: true }],
       [{ text: 'products, ' }, { text: 'end to end.', highlight: true }],
     ],
     blurb:
-      'Full Stack Developer in Mumbai, specialising in AI. I build products from the database to the interface — Java and Node.js services, React and Next.js frontends, and LLM features that do real work.',
-    featured: { label: 'Featured — Estate Ease, an AI real-estate platform', href: 'https://estate-ease-web.vercel.app' },
+      'Full Stack Developer in Mumbai, specialising in AI. I build products from the database to the interface: Java and Node.js services, React and Next.js frontends, and LLM features that do real work.',
+    featured: { label: 'Featured: Estate Ease, an AI real estate platform', href: 'https://estate-ease-web.vercel.app' },
   },
   about: {
-    lead: 'I build full-stack products with AI at the core — from the data model and API to the interface people actually use.',
+    lead: 'I build full stack products with AI at the core, from the data model and API to the interface people actually use.',
     detail:
       "Six years across BFSI and SaaS, shipping Java, Spring Boot and Node.js services and React, Vue and Next.js frontends. My focus now is AI that's grounded in real data: semantic search, LLM insights and agent tooling. Estate Ease is where it all comes together.",
   },
   works: {
     heading: 'Selected Work',
-    caption: "A FEW THINGS I'VE DESIGNED AND BUILT — FROM AI PRODUCTS TO DEVELOPER TOOLING.",
+    caption: "A FEW THINGS I'VE DESIGNED AND BUILT, FROM AI PRODUCTS TO DEVELOPER TOOLING.",
   },
-  skillsPage: { heading: 'Skills I build with' },
-  projectsPage: { heading: "Selected projects — products, tools and experiments I've designed and built." },
+  skillsPage: { heading: 'Skills & stack' },
+  projectsPage: { heading: "Products, tools and experiments I've designed and built." },
   contact: {
     kicker: "That's all for now.",
     lines: ['Got a project in mind?', 'Let’s talk'],
@@ -39,7 +39,7 @@ export const profile: Profile = {
       name: 'Estate Ease',
       badge: 'Featured · AI',
       summary:
-        'AI real-estate platform: conversational home search with embedding-based matching, curated recommendations, and Claude-powered insight on any listing or neighbourhood. Full stack: Next.js app, Express API, Postgres, real-time updates and payments.',
+        'AI real estate platform: conversational home search with semantic matching, curated recommendations and AI insight on any listing or neighbourhood. Built full stack with a Next.js app, an Express API, Postgres, live updates and payments.',
       stack: ['Next.js 15', 'Express', 'TypeScript', 'Claude API', 'Embeddings', 'PostgreSQL', 'Redis'],
       links: [{ label: 'Live site', href: 'https://estate-ease-web.vercel.app' }],
       cover: { kind: 'image', src: '/covers/estate-ease.jpg' },
@@ -64,7 +64,7 @@ export const profile: Profile = {
     {
       id: 'figma-to-code',
       name: 'figma-to-code',
-      summary: "Open-source Agent Skill that turns a Figma file into an exact CSS spec plus a register of the file's defects.",
+      summary: "Open source Agent Skill that turns a Figma file into an exact CSS spec plus a register of the file's defects.",
       stack: ['Agent Skill', 'Figma MCP', 'Markdown'],
       links: [{ label: 'Code', href: 'https://github.com/shivams07/figma-to-code' }],
       cover: { kind: 'figma-to-code' },
@@ -75,25 +75,32 @@ export const profile: Profile = {
       id: 'ai',
       title: 'AI engineering',
       description:
-        'LLM features grounded in real data: semantic search, generated insights and agent tooling, shipped in Estate Ease and figma-to-code.',
+        'LLM applications grounded in real data: retrieval, agents and tool use, shipped in Estate Ease and figma-to-code.',
       column: 1,
       featured: true,
       items: [
-        { label: 'Claude', brand: 'claude' },
-        { label: 'Claude API integration' },
-        { label: 'Embeddings & semantic search' },
-        { label: 'Prompt design' },
-        { label: 'AI agents & skills' },
+        { label: 'LangGraph', brand: 'langgraph' },
+        { label: 'LangChain', brand: 'langchain' },
+        { label: 'Model Context Protocol (MCP)', brand: 'modelcontextprotocol' },
+        { label: 'CrewAI', brand: 'crewai' },
+        { label: 'RAG' },
+        { label: 'Embeddings & vector search' },
+        { label: 'Agentic workflows' },
+        { label: 'Multi-agent systems' },
+        { label: 'Tool calling' },
+        { label: 'Prompt engineering' },
+        { label: 'Context engineering' },
       ],
     },
     {
       id: 'backend',
       title: 'Backend',
-      description: 'Services and APIs built to stay up: Java and Spring Boot for scale, Node.js and Express for product speed.',
+      description: 'Services and APIs built to stay up: Java and Spring Boot for scale, Node.js, Express and Python for product speed.',
       column: 1,
       items: [
         { label: 'Java', brand: 'openjdk' },
         { label: 'Spring Boot', brand: 'springboot' },
+        { label: 'Python', brand: 'python' },
         { label: 'Node.js', brand: 'nodedotjs' },
         { label: 'Express', brand: 'express' },
       ],
@@ -125,7 +132,7 @@ export const profile: Profile = {
     {
       id: 'mobile',
       title: 'Mobile',
-      description: 'Native iOS with SwiftUI and SwiftData, offline-first and synced through CloudKit.',
+      description: 'Native iOS apps with SwiftUI and SwiftData that work offline and sync through CloudKit.',
       column: 2,
       items: [{ label: 'Swift', brand: 'swift' }, { label: 'SwiftUI' }, { label: 'SwiftData' }, { label: 'CloudKit' }],
     },
@@ -183,7 +190,7 @@ export const profile: Profile = {
     {
       id: 'education',
       title: 'Education',
-      description: 'B.Sc. Information Technology, Ramniranjan Jhunjhunwala College, Mumbai. 9.7/10, 2017–2020.',
+      description: 'B.Sc. Information Technology, Ramniranjan Jhunjhunwala College, Mumbai. 9.7/10, 2017 to 2020.',
       column: 3,
       items: [],
     },

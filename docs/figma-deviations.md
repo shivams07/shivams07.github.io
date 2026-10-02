@@ -20,7 +20,7 @@ defined (`get_variable_defs` returns `{}`), and no node is hidden.
 | 12 | Card arrow `20:95` | "Arrow Up Left Contained" rotated 44° | Circle-arrow pointing right, rotates on hover | Equivalent glyph, own icon set |
 | 13 | Footer `49:77` | 565px tall, wordmark ends 18px from bottom | Bottom padding `--dock-clearance` (112px) | Fixed dock would cover the wordmark |
 | 14 | Footer arrow `49:81` | Decorative | "Back to top" button | Give it a function |
-| 15 | Skills heading `56:145` | "Skills that fuel my passion" | "Skills I build with" | Professional tone |
+| 15 | Skills heading `56:145` | "Skills that fuel my passion" | "Skills & stack" | Professional tone |
 | 16 | Card cover `20:82` | Image cropped at left −4.89%, top 3.07%, width 114.25% | `object-fit: cover; object-position: top` | Own screenshots |
 | 17 | All frames | Desktop only (1920px) | Fluid `clamp()` down to 375px, tablet and mobile layouts | No smaller breakpoint exists in the file. Each minimum is a designed **floor**, not the exact 375px value. Pure-vw tokens resolve above their floor at 375px: \`--gutter\` ≈ 26px, \`--fs-wordmark\` ≈ 58.6px, so the wordmark spans the width. |
 | 18 | Hero values | n/a (uihut is a flat preview image) | Designed values in `Hero.module.css` / `NeonGlow.module.css` | Rule 1: no values are read off screenshots |
